@@ -25,6 +25,15 @@
 * **6.2.1版本有功能性BUG，已被上游作者废置，请酌情使用**
 
 ## 更新日志
+20220822：
+* 自己更新拉取的最小的分支的release的源码打包。最小源码下载地址在
+
+![源码截图](./md/iShot_2022-08-22_15.07.28.png)
+
+修改dockerfile里面的源码地址，然后执行下面的代码进行dockerfile的build(不要忘记代码最后一个点)
+```sh
+docker build -f Dockerfile -t vergilgao/mdc-fix:latest .
+```
 
 20220529：
 

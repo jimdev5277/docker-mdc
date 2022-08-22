@@ -5,7 +5,7 @@ ENV MDC_SOURCE_VERSION=${MDC_SOURCE_VERSION:-a6aaca984f4f52e187d0f4c68424bb18a48
 
 RUN mkdir -p /tmp/mdc && cd /tmp/mdc && \
     # get mdc source code
-    wget -O- https://github.com/yoshiko2/Movie_Data_Capture/archive/$MDC_SOURCE_VERSION.tar.gz | tar xz -C /tmp/mdc --strip-components 1 && \
+    wget -O- https://github.com/yoshiko2/Movie_Data_Capture/archive/refs/tags/6.3.1.tar.gz | tar xz -C /tmp/mdc --strip-components 1 && \
     # fix dowload error
     sed -i "s/if configProxy:/if configProxy.enable:/g" core.py && \
     # build mdc
